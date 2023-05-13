@@ -4,7 +4,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 :root {
   --color-text-write: #ffffff;
 }
@@ -181,6 +180,149 @@ body {
   color: #ffffff;
 }
 
+/* catalog */
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.catalog-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 125%;
+
+  color: #2e363e;
+  margin-bottom: 80px;
+}
+
+.catalog-cards {
+  width: 380px;
+  height: 582px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.catalog-cards:hover,
+.catalog-cards:focus {
+  transform: translateY(-10px);
+  transition-delay: 100ms;
+}
+
+.catalog-cards-photo {
+  border-radius: 10px 10px 0px 0px;
+  width: 380px;
+  height: 245px;
+}
+
+.catalog-cards-text-button {
+  padding: 50px 44px;
+  background: #ffffff;
+
+  border: 1px solid #f2f6fa;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.catalog-cards-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 143%;
+  color: #2e363e;
+  margin-bottom: 12px;
+}
+
+.catalog-cards-text {
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #2e363e;
+  margin-bottom: 24px;
+}
+
+.catalog-cards-price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #434b53;
+  margin-bottom: 14px;
+}
+
+.catalog-cards-button {
+  padding: 20px 40px;
+  width: 163px;
+  height: 68px;
+
+  background: #fed84c;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+
+  color: #2e363e;
+}
+
+.position {
+  position: relative;
+}
+
+.catalog-berry-left {
+  position: absolute;
+  left: -150px;
+  top: 212px;
+}
+.catalog-leaf-left {
+  position: absolute;
+  bottom: 425px;
+  left: -120px;
+}
+.catalog-leaf-right {
+  position: absolute;
+  right: -150px;
+  top: 960px;
+}
+
+/* catalog */
+
+/* photoLoad */
+.photoLoad {
+  background: #081130;
+  height: 1352px;
+  position: relative;
+}
+
+.photoconteiner {
+  position: relative;
+
+  height: 533px;
+}
+
+.photoLoad-phone {
+  position: absolute;
+  left: 0;
+}
+
+.photoLoad-bottom-img {
+  position: absolute;
+}
+
+.photoload-leaf {
+  position: absolute;
+  top: 55px;
+  left: -25px;
+}
+
+.photoload-berry {
+  position: absolute;
+  right: -180px;
+}
+/* photoLoad */
 /* photo background */
 .background {
   position: relative;
@@ -209,7 +351,6 @@ body {
 
 /* photo background */
 html,
-
 div,
 span,
 applet,
