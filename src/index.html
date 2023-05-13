@@ -4,11 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header>
+      <section class="header">
+        <div class="conteiner hero-conteiner">
+          <nav>
+            <a href="" class="logo">Сладкий сундук</a>
+          </nav>
+          <address>
+            <ul class="adress-list">
+              <li class="adress-item">
+                <svg class="icon-location" width="17" height="23">
+                  <use href="./img/symbol-defs.svg#icon-location"></use>
+                </svg>
+                <span class="adress-item-text"
+                  >г. Хмельницкий, ул. Куйбышева 31</span
+                >
+              </li>
+              <li class="phone-item">
+                <svg class="icon-phone" width="36" height="36">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <p class="phone-item-text">
+                  <a href="tel:0638449549" class="phone-item-link"
+                    >8 (063) 844-95-49</a
+                  >
+                  <span class="phone-item-text-span"
+                    >Ежедневно с 9:00 до 20:00</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="background">
+          <div class="conteiner">
+            <div class="hero-text">
+              <div class="hero-text-block">
+                <p class="hero-text-icon"><span>вкуснейшие</span></p>
+                <h1 class="hero-text-title">
+                  Пирожные и капкейки от 50 грн/шт. с доставкой по Киеву
+                </h1>
+                <p class="hero-text-p">
+                  Приготовим за 3 часа в день заказа. Доставка на авто в
+                  холодильнике.
+                </p>
+              </div>
+              <div class="hero-button">
+                <button type="button" class="hero-block-button">
+                  Перейти в каталог
+                </button>
+                <p class="hero-block-button-text">9 различных видов на выбор</p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="./img/berry-left.png"
+                alt="background-image berry-left"
+                class="berry-left"
+              />
+              <img
+                src="./img/leaf-left.png"
+                alt="background-image leaf-left"
+                class="leaf-left"
+              />
+              <img
+                src="./img/berry-right-top.png"
+                alt="background-image berry-right-top"
+                class="berry-right-top"
+              />
+              <img
+                src="./img/berry-right-bottom.png"
+                alt="background-image berry-right-bottom"
+                class="berry-right-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="conteiner"></div>
+      </section>
+      <section class="photoLoad">
+        <div class="conteiner"></div>
+      </section>
+      <section class="info">
+        <div class="conteiner"></div>
+      </section>
+      <section class="reviews">
+        <div class="conteiner"></div>
+      </section>
+      <section class="photoGallery">
+        <div class="conteiner"></div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="conteiner"></div>
+      </section>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

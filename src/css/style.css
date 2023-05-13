@@ -1,0 +1,335 @@
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+  --color-text-write: #ffffff;
+}
+
+.conteiner {
+  width: 1210px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 143%;
+  color: var(--color-text-write);
+  text-decoration: none;
+  padding: 45px 0 40px 0;
+}
+
+.adress-item {
+  display: flex;
+  gap: 10px;
+}
+
+.adress-item-text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  width: 120px;
+  display: block;
+  color: var(--color-text-write);
+}
+
+.adress-list {
+  display: flex;
+  gap: 85px;
+  align-items: center;
+}
+
+.phone-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 10px;
+  line-height: 150%;
+  height: 45px;
+}
+
+.phone-item-text {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+
+  color: var(--color-text-write);
+
+  width: 238px;
+}
+
+.phone-item-text-span {
+  font-family: 'Montserrat';
+  font-size: 13px;
+
+  color: var(--color-text-write);
+}
+.phone-item-link {
+  color: var(--color-text-write);
+  text-decoration: none;
+}
+.header {
+  height: 105px;
+  position: absolute;
+  width: 100%;
+  padding-top: 28px;
+  border-bottom: 1px solid rgba(126, 134, 142, 0.1);
+
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1920px;
+}
+
+.hero {
+  background: #081130;
+  background-image: url(../img/bg.jpg);
+  height: 1280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 1280px;
+  max-width: 1900px;
+}
+.hero-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-text {
+  padding-top: 310px;
+  width: 645px;
+}
+.hero-text-block {
+  margin-bottom: 40px;
+}
+.hero-text-icon {
+  width: 132px;
+  height: 37px;
+
+  background: #f2f6fa;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-bottom: 24px;
+}
+
+.hero-text-icon > span {
+  font-family: 'Montserrat';
+  font-size: 11px;
+  line-height: 150%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #2e363e;
+}
+
+.hero-text-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+
+  letter-spacing: -1px;
+
+  margin-bottom: 24px;
+
+  color: #ffffff;
+}
+
+.hero-text-p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 143%;
+  width: 545px;
+
+  color: #ffffff;
+}
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero-block-button {
+  width: 277px;
+  height: 88px;
+
+  border: 0;
+
+  background: #fed84c;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hero-block-button-text {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 160%;
+  width: 140px;
+  color: #ffffff;
+}
+
+/* photo background */
+.background {
+  position: relative;
+  height: 1110px;
+}
+.berry-left {
+  position: absolute;
+  left: 0;
+  top: 202px;
+}
+.leaf-left {
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+}
+.berry-right-top {
+  position: absolute;
+  right: 0;
+  top: 109px;
+}
+.berry-right-bottom {
+  position: absolute;
+  right: 170px;
+  bottom: -30px;
+}
+
+/* photo background */
+html,
+
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  display: block;
+}
