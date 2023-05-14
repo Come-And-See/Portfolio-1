@@ -22,7 +22,7 @@ function onSendMessageTelegram(e) {
   e.preventDefault();
 
   let numberPhone = `<b>!!Заявка с сайта(футтер)!!</b>\nНомер телефона: <b>${this.phone.value}</b>`;
-
+  console.log(process.env.TOKEN);
   axios.post(`https://api.telegram.org/bot${process.env.TOKEN}/sendMessage`, {
     parse_mode: 'html',
     chat_id: process.env.CHATID,
