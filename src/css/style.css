@@ -567,7 +567,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  /* gap: 9px; */
 }
 .galleru-item {
   height: auto;
@@ -575,7 +575,11 @@ body {
   max-width: 628.3px;
 }
 .gallery-a {
-  width: calc((100%-18px) / 3);
+  max-width: calc((100% - 18px)/3);
+  margin-bottom: 9px;
+}
+.gallery-a:not(:nth-child(3n)) {
+  margin-right: 9px;
 }
 /* footer */
 
