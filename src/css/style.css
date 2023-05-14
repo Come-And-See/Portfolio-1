@@ -296,6 +296,7 @@ body {
   background: #081130;
   height: 1352px;
   position: relative;
+  overflow: hidden;
 }
 
 .photoconteiner {
@@ -310,6 +311,10 @@ body {
 .photoLoad-phone {
   position: absolute;
   left: 0;
+  width: 100%;
+  height: auto;
+  max-width: 990px;
+  bottom: 0;
 }
 .photo-top-img {
   width: 100%;
