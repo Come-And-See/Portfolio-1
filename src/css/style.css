@@ -74,6 +74,7 @@ body {
 .phone-item-link {
   color: var(--color-text-write);
   text-decoration: none;
+  cursor: pointer;
 }
 .header {
   height: 105px;
@@ -310,9 +311,14 @@ body {
   position: absolute;
   left: 0;
 }
+.photo-top-img {
+  width: 100%;
+}
 
 .photoLoad-bottom-img {
   position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .photoload-leaf {
