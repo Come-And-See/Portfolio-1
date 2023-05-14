@@ -5,6 +5,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import axios from 'axios';
+import { Notify } from 'notiflix';
 
 new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
@@ -26,10 +27,13 @@ function onSendMessageTelegram(e) {
   const token =
     process.env.TOKEN || '6150030403:AAEvKg9VqjBFZCz59AJ6Bjb3UQ_mZ1DwT5w';
   const chat = process.env.CHATID || '-1001872926354';
-  
+
   axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
     parse_mode: 'html',
     chat_id: chat,
     text: numberPhone,
   });
+
+  document.querySelector('#fotter-form').reset();
+  Notify.success(`Спасибо за заказ :) Менеджер скоро с вами свяжится`);
 }
