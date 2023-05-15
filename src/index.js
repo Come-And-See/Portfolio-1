@@ -7,15 +7,33 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import axios from 'axios';
 import { Notify } from 'notiflix';
 
-// core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.min.css';
+
+
 
 import templateReviews from './template/reviews.hbs';
 import reviews from './BD/reviews';
 
 // init Swiper:
-new Swiper('.swiper');
+const swiper = new Swiper('.swiper', {
+  grabCursor: true,
+  slideToClickedSlide: true,
+  initialSlide: 0,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1.59,
+  spaceBetween: 50,
+  autoplay: {
+    delay: 100, // Задержка между прокруткой слайдов (в миллисекундах)
+    disableOnInteraction: true,
+  },
+});
+
+swiper.on('slideChange', function () {
+  if (swiper.activeIndex === 1) {
+    // Проверяем, если активный слайд равен 1 (второй слайд)
+    swiper.autoplay.stop(); // Останавливаем автопрокрутку
+  }
+});
 
 new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
