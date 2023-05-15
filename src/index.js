@@ -1,11 +1,21 @@
 import templateCardProduct from './template/CardProduct.hbs';
-import products from './Product/products';
+import products from './BD/products';
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import axios from 'axios';
 import { Notify } from 'notiflix';
+
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+
+import templateReviews from './template/reviews.hbs';
+import reviews from './BD/reviews';
+
+// init Swiper:
+new Swiper('.swiper');
 
 new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
@@ -14,6 +24,10 @@ new SimpleLightbox('.gallery a', {
 document
   .querySelector('.catalog-list')
   .insertAdjacentHTML('beforeend', templateCardProduct(products));
+
+document
+  .querySelector('.swiper-wrapper')
+  .insertAdjacentHTML('beforeend', templateReviews(reviews));
 
 document
   .querySelector('#fotter-form')
