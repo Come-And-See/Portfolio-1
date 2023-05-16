@@ -6,7 +6,6 @@ import reviewsPhoto5 from '../img/reviews/reviews-photo-5.jpg';
 import reviewsPhoto6 from '../img/reviews/reviews-photo-6.jpg';
 import reviewsPhoto7 from '../img/reviews/reviews-photo-7.jpg';
 
-
 export default [
   {
     img: `${reviewsPhoto1}`,

@@ -8,7 +8,7 @@ import photo7 from '../img/products/photo7.jpg';
 import photo8 from '../img/products/photo8.jpg';
 import photo9 from '../img/products/photo9.jpg';
 
-export default [
+ export default [
   {
     img: `${photo1}`,
     title: 'Кремовый замок',

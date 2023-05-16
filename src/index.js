@@ -9,7 +9,6 @@ import { Notify } from 'notiflix';
 
 
 
-
 import templateReviews from './template/reviews.hbs';
 import reviews from './BD/reviews';
 
