@@ -398,8 +398,59 @@
         </div>
       </section>
     </footer>
+
+    <div class="bakdrop is-hidden">
+      <div class="basket">
+        <button type="button" class="button-close"></button>
+
+        <div class="basket-form">
+          <table>
+            <tr class="top-basket">
+              <th class="top-basket-title">Товар</th>
+              <th class="top-basket-title">Цена</th>
+              <th class="top-basket-title">Кол-во</th>
+              <th class="top-basket-title">Общая цена</th>
+              <th class="top-basket-title">Удалить</th>
+            </tr>
+            <tr class="top-basket">
+              <td>ячейка тела таблицы</td>
+              <td>ячейка тела таблицы</td>
+              <td>ячейка тела таблицы</td>
+              <td>ячейка тела таблицы</td>
+              <td>ячейка тела таблицы</td>
+            </tr>
+          </table>
+          <div class="basket-form-all"><p>Всего товаров: 17</p><p>Общая стоимость: 12312321</p></div>
+        </div>
+
+        <form id="form-basket" class="form-submit-basket">
+          <div class="form-submit-basket-input">
+            <input
+              type="text"
+              name="name"
+              placeholder="Введите имя"
+              class="basket-form-input"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Введите телефон"
+              class="basket-form-input"
+            />
+          </div>
+          <div class="form-submit-basket-button">
+            <button type="button" class="basket-form-button">
+              Продолжить покупку
+            </button>
+            <button type="submit" class="basket-form-submit">
+              Сделать заказ
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
-

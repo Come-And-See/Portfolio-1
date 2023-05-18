@@ -7,8 +7,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import axios from 'axios';
 import { Notify } from 'notiflix';
 
-
-
 import templateReviews from './template/reviews.hbs';
 import reviews from './BD/reviews';
 
@@ -67,4 +65,18 @@ function onSendMessageTelegram(e) {
 
   document.querySelector('#fotter-form').reset();
   Notify.success(`Спасибо за заказ :) Менеджер скоро с вами свяжится`);
+}
+
+if (document.querySelectorAll('.catalog-cards-button')) {
+  document.querySelectorAll('.catalog-cards').forEach(button => {
+    button.addEventListener('click', onBasket);
+  });
+
+  function onBasket(e) {
+    if (e.target.tagName !== 'BUTTON') {
+      return;
+    }
+    
+    console.dir(e.currentTarget);
+  }
 }
