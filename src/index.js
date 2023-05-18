@@ -77,6 +77,10 @@ if (document.querySelectorAll('.catalog-cards-button')) {
       return;
     }
     
-    console.dir(e.currentTarget);
+    console.log(
+      e.currentTarget.querySelector('.catalog-cards-title').textContent,
+      e.currentTarget.querySelector('.catalog-cards-photo').src,
+      e.currentTarget.querySelector('.qqq').textContent
+    );
   }
 }
